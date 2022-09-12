@@ -15,7 +15,7 @@
      
 <body> 
              <!-- space -->
-                <div class="py-2 text-center"> <img src="https://semicon.github.io/img/LOGOKRUCHIANgrow.png" alt="logo" height="65" width="auto"/> </div>
+                <div class="pt-3 text-center"> <img src="https://semicon.github.io/img/LOGOKRUCHIANgrow.png" alt="logo" height="65" width="auto"/> </div>
                 <div class="row justify-content-center pt-2">
                     <div class="col-lg-7 col-md-10">
                         <h3 class="fw-normal text-center mb-5 border-bottom pb-2">Contact with Our Help Team</h3>
@@ -62,7 +62,7 @@
                                 <div class="col-12 text-end">
                                 <button type="submit" class="btn btn-primary mt-3">Submit</button>
                                 </div>
-                                <p id="demo"></p>
+                                <p id="msg"></p>
                             </div>
                              
                         </form>
@@ -82,7 +82,7 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert'><b>Thank You for providing the details, We shall get back to you shortly !</b></div>",contact.reset())
+                .then(response => document.getElementById("msg").innerHTML = "<div class='alert alert-primary' role='alert'><b>Thank You for providing the details, We shall get back to you shortly !</b></div>",contact.reset())
                 .catch(error => console.error('Error!', error.message))
             })
     </script>
