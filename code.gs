@@ -1,7 +1,7 @@
 // Original code from https://github.com/jamiewilson/form-to-google-sheets
 // Updated for 2021 and ES6 standards
 
-const sheetName = 'Sheet1'
+const sheetName = 'data'
 const scriptProp = PropertiesService.getScriptProperties()
 
 function initialSetup () {
